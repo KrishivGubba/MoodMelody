@@ -5,7 +5,11 @@
 [![React](https://img.shields.io/badge/React-18.0%2B-61dafb)](https://reactjs.org/)
 
 MoodMelody is an innovative AI-powered music companion that automatically adapts your music to your current activity and emotional state. Using advanced computer vision and machine learning, it creates the perfect soundtrack for every moment of your day.
+
+**Update:** Won Top 7 at MadHacks!
 ![image](https://github.com/user-attachments/assets/faa113c8-3310-4a5d-aa53-4ba7b41dcf46)
+
+
 
 
 ## ✨ Features
