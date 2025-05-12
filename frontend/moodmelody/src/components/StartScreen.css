@@ -1,0 +1,170 @@
+/* StartScreen.css */
+
+.start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: white;
+    font-family: 'Circular', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #181818;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1DB954; /* Spotify green */
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #b3b3b3;
+  }
+  
+  .instructions {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: #b3b3b3;
+  }
+  
+  .start-button, .stop-button {
+    padding: 15px 32px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 1rem 0;
+  }
+  
+  .start-button {
+    background-color: #1DB954;
+    color: white;
+  }
+  
+  .start-button:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+  }
+  
+  .stop-button {
+    background-color: #E91429; /* Spotify red */
+    color: white;
+  }
+  
+  .stop-button:hover {
+    background-color: #ff1c36;
+    transform: scale(1.05);
+  }
+  
+  .sharing-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #242424;
+    margin-bottom: 2rem;
+  }
+  
+  .status-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #1DB954;
+    margin-right: 10px;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .status-text {
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .activity-detection {
+    margin: 1.5rem 0;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .activity-detection h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #b3b3b3;
+  }
+  
+  .activity-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #1DB954;
+    text-transform: capitalize;
+  }
+  
+  .music-info {
+    font-size: 1rem;
+    color: #b3b3b3;
+  }
+  
+  .preview-container {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000;
+    max-height: 300px;
+  }
+  
+  .privacy-note {
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    color: #b3b3b3;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .start-button, .stop-button {
+      padding: 12px 25px;
+    }
+  }
